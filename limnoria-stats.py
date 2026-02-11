@@ -184,9 +184,9 @@ nav a:hover, #theme-toggle:hover {{
   </div>
   <nav>
     <a href="index.html">Top 10</a>
-    <a href="daily.html">Per dag</a>
-    <a href="total.html">Totalt</a>
-    <button id="theme-toggle" title="Byt tema">
+    <a href="daily.html">Per day</a>
+    <a href="total.html">Total</a>
+    <button id="theme-toggle" title="Change theme">
       <span id="theme-icon">☀️</span>
     </button>
   </nav>
@@ -263,7 +263,7 @@ def main():
     write_html(
         f"{OUTPUT_DIR}/index.html",
         "Top 10",
-        f"<h1>Top 10 (alla dagar)</h1><table><tr><th>Nick</th><th>Ord</th></tr>{rows}</table>"
+        f"<h1>Top 10 (From total)</h1><table><tr><th>Nick</th><th>Ord</th></tr>{rows}</table>"
     )
 
     # =====================
