@@ -263,7 +263,7 @@ def main():
     write_html(
         f"{OUTPUT_DIR}/index.html",
         "Top 10",
-        f"<h1>Top 10 (From total)</h1><table><tr><th>Nick</th><th>Ord</th></tr>{rows}</table>"
+        f"<h1>Top 10 (From total)</h1><table><tr><th>Nick</th><th>Words</th></tr>{rows}</table>"
     )
 
     # =====================
@@ -272,14 +272,14 @@ def main():
     daily_html = "<h1>Statistik per dag</h1>"
     for day in sorted(daily_counter, reverse=True):
         daily_html += f"<h2>{day}</h2><table>"
-        daily_html += "<tr><th>Nick</th><th>Ord</th></tr>"
+        daily_html += "<tr><th>Nick</th><th>Words</th></tr>"
         for nick, count in daily_counter[day].most_common(TOP_N):
             daily_html += f"<tr><td>{nick}</td><td>{count}</td></tr>"
         daily_html += "</table>"
 
     write_html(
         f"{OUTPUT_DIR}/daily.html",
-        "Per dag",
+        "Per day",
         daily_html
     )
 
@@ -289,8 +289,8 @@ def main():
     max_count = max(total_counter.values(), default=1)
     total_words = sum(total_counter.values())
 
-    total_html = "<h1>Total statistik</h1><table>"
-    total_html += "<tr><th>Nick</th><th>Ord</th><th>%</th><th></th></tr>"
+    total_html = "<h1>Total stats</h1><table>"
+    total_html += "<tr><th>Nick</th><th>Words</th><th>%</th><th></th></tr>"
 
     for nick, count in total_counter.most_common():
         width = int((count / max_count) * 300)
@@ -305,7 +305,7 @@ def main():
 
     write_html(
         f"{OUTPUT_DIR}/total.html",
-        "Totalt",
+        "Total",
         total_html
     )
 
