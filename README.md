@@ -10,7 +10,12 @@ Settings:
 
 3. OUTPUT_DIR = "/var/www/html" # Where to generate output htlm files, index, daily and total.
 
-4. Generate the ignore nick file. 
+4. Generate the ignore nick file.
   mkdir -p /etc/limnoria
+  nano /etc/limnoria/ignored_nicks.txt
+  Addnicks per line as:
+  nick1
+  nick2
 
-BEING EDITED,COMPLETE LATER TODAY
+5. Have a webserver showing the stats.
+
