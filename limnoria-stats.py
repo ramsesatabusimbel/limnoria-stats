@@ -6,7 +6,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 # =====================
-# Copyright ramsesatabusimbel 2026
+# limnoria-stats.py  Copyright (C) 2026  ramsesatabusimbel @ github
 # =====================
 
 # =====================
