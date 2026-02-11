@@ -2,6 +2,7 @@
 A python script that counts words from .log file with Limnoria ChannelLogger.
 
 Change language and banner by yourself or with AI. English is standard.
+Time for logs are UTC, this script transform it to CET (Europe/Stockholm)
 
 Settings:
 1. LOG_DIR = "/home/USER/path/to/log/file/folder" # As in "home/bot/limnoria/logs/ChannelLogger/network".
