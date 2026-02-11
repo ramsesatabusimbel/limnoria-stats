@@ -13,7 +13,7 @@ Settings:
 4. Generate the ignore nick file.
   mkdir -p /etc/limnoria,
   nano /etc/limnoria/ignored_nicks.txt,
-  Add nicks per line.
+  Add nicks per line in lowercase.
 
 5. Have a webserver showing the stats.
 
